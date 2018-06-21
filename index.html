@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head-site">
+        <h1 class="main__heading_1">Liste des autolib de paris</h1>
+        <p class="head-site__paragraph">
+            c'est un projet simple d'aficher l'adress dans le
+            <a href="https://www.openstreetmap.org/" class="link heade-site__link">OpenStreetMap</a>.</p>
+        <p class="head-site__paragraph">l'info des autolibe de Paris est de
+            <a href="https://opendata.paris.fr/explore/dataset/autolib-disponibilite-temps-reel/"
+                class="link head-site__link">Paris data</a>.</p>
+        </p>
+    </header>
+    <main class="main">
+        <article class="map">
+            <div class="map__cart" id="js_map"></div>
+            <div class="map__detail">
+                <ul class="map__list" id="js_map_list">
+                    <!-- <li class="map__latitude_list-item"></li>
+                    <li class="map__longitude_list-item"></li> -->
+                </ul>
+            </div>
+        </article>
+        <article class="detail-table">
+            <!-- <div class="detail-table__search"> -->
+                <form class="detail-table__search-form">
+                    <input type="text" name="text-input" id="js_detail_input" class="detail-table__input" placeholder="Enter your Address...">
+                </form>
+            <!-- </div> -->
+            <table class="table">
+                <thead class="table__head">
+                    <tr>
+                        <th>Adresse</th>
+                        <th>voitures disponible</th>
+                        <th>places libres</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body"></tbody>
+            </table>
+            <div class="detail-table__number"></div>
+        </article>
+    </main>
+    <footer class="footer-site">
+        <p class="footer-sire__paragraph">
+            Ce projet par Meghdad ABOLFAZLI
+        </p>
+    </footer>
+</body>
+
+</html>

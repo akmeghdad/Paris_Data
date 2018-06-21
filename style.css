@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8ebff;
+}
+
+ul {
+    list-style: none;
+}
+td, th {
+    padding: 10px 0 10px 5px;
+}
+
+.main {
+    display: flex;
+    height: 65vh;
+}
+
+.head-site {
+    padding: 15px;
+    background-color: #e8ebff;
+    background: linear-gradient(#6f7fe8, #6778e84a);
+    height: 25vh;
+}
+
+.main__heading_1 {
+    color: #f0f6ff;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.head-site__paragraph {
+    padding-left: 50px;
+}
+
+.link.heade-site__link {}
+
+.link.head-site__link {}
+
+.main__select_addres {}
+
+.map {
+    font-size: 0;
+    width: 50vw;
+}
+
+.map__cart {
+    height: 100%;
+}
+
+.map__detail {}
+
+.map__list {}
+
+.footer-site {
+    background: linear-gradient(#6778e84a, #6f7fe8);
+    padding: 30px;
+    color: #2743ff;
+    height: 10vh;
+}
+
+.footer-sire__paragraph {
+    font-size: 14px;
+    text-align: center;
+}
+
+.detail-table {
+    padding: 20px;
+    width: 50vw;
+}
+
+.table {
+    font-size: 13px;
+    display: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__body {
+    text-align: center;
+}
+
+.table_tr-content td:first-of-type {
+    text-align: left;
+}
+
+.detail-table__number {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail-table__search-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detail-table__input {
+    width: 40vw;
+}
+
+.table__head {}
+
+.footer-site {}
+
+.footer-sire__paragraph {}
+
+.table_tr-content {
+    /* height: 20px; */
+    cursor: pointer;
+}
+
+.table_tr-content:nth-of-type(odd) {
+    background: #bfc6f878;
+}
+.table_tr-content.selected, .detail-table__number .selected{
+    background-color: #369af3;
+}
+.table_tr-content:hover{
+    background: #263aca78;
+}
+.detail-table__page-link:hover{
+    background: #545b8d;
+}
+.detail-table__page-link {
+    text-align: center;
+    margin: 0 5px;
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    background-color: #c0c7f8;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #6277ff;
+}
+.detail-table__number {
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+}
+
